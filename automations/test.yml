@@ -1,0 +1,53 @@
+name: "Send internal messages to ASA"
+description: |
+  Automatically send flagged internal messages to ASA for analysis,
+  then take action based on the ASA verdict.
+type: "triage_rule"
+authors:
+  - name: "Sublime Security"
+triage_flagged_messages: true
+default_actions:
+  - "send_to_asa"
+source: |
+  type.internal
+tags:
+  - "ASA"
+  - "Internal Threats"
+
+children:
+  - name: "Test 1"
+    description: Testing 1
+    triage_asa_complete: true
+    asa_verdict: "malicious"
+    default_actions:
+      - "auto_review"
+    auto_review_classification: "malicious"
+
+  - name: "Test 2"
+    description: Testing 2
+    triage_asa_complete: true
+    asa_verdict: "spam"
+    default_actions:
+      - "auto_review"
+    auto_review_classification: "spam"
+
+  - name: "Test 3"
+    description: Testing 3
+    triage_asa_complete: true
+    asa_verdict: "graymail"
+    default_actions:
+      - "auto_review"
+    auto_review_classification: "graymail"
+
+  - name: "Test 4"
+    description: Testing 4
+    triage_asa_complete: true
+    asa_verdict: "likely_benign"
+    default_actions:
+      - "auto_review"
+    auto_review_classification: "benign"
+
+  - name: "Test 5"
+    description: Testing 5
+    triage_asa_complete: true
+    asa_verdict: "unknown"
