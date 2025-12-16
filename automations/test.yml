@@ -4,7 +4,7 @@ description: |
   then take action based on the ASA verdict.
 type: "triage_rule"
 authors:
-  - name: "Sublime Security"
+  - name: "Hi"
 triage_flagged_messages: true
 default_actions:
   - "send_to_asa"
