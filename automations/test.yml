@@ -18,7 +18,7 @@ children:
   - name: "Test 1"
     description: Testing 1
     triage_asa_complete: true
-    asa_verdict: "malicious"
+    asa_verdict_trigger: "malicious"
     default_actions:
       - "auto_review"
     auto_review_classification: "malicious"
@@ -26,7 +26,7 @@ children:
   - name: "Test 2"
     description: Testing 2
     triage_asa_complete: true
-    asa_verdict: "spam"
+    asa_verdict_trigger: "spam"
     default_actions:
       - "auto_review"
     auto_review_classification: "spam"
@@ -34,7 +34,7 @@ children:
   - name: "Test 3"
     description: Testing 3
     triage_asa_complete: true
-    asa_verdict: "graymail"
+    asa_verdict_trigger: "graymail"
     default_actions:
       - "auto_review"
     auto_review_classification: "graymail"
@@ -42,7 +42,7 @@ children:
   - name: "Test 4"
     description: Testing 4
     triage_asa_complete: true
-    asa_verdict: "likely_benign"
+    asa_verdict_trigger: "likely_benign"
     default_actions:
       - "auto_review"
     auto_review_classification: "benign"
@@ -50,4 +50,4 @@ children:
   - name: "Test 5"
     description: Testing 5
     triage_asa_complete: true
-    asa_verdict: "unknown"
+    asa_verdict_trigger: "unknown"
