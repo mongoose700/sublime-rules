@@ -1,7 +1,6 @@
-name: "Send internal messages to ASA"
+name: "Name change 2"
 description: |
-  Automatically send flagged internal messages to ASA for analysis,
-  then take action based on the ASA verdict.
+  Description change
 type: "triage_rule"
 authors:
   - name: "Hi"
