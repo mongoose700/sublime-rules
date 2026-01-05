@@ -1,4 +1,4 @@
-name: "Send internal messages to ASA!!"
+name: "Send internal messages to ASA!"
 description: |
   Automatically send flagged internal messages to ASA for analysis,
   then take action based on the ASA verdict.
