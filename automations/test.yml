@@ -15,39 +15,39 @@ tags:
 id: "019b2d95-4907-7bb6-9d56-9a7d4d5f1164"
 
 children:
-  - name: "Test 1"
-    description: Testing 1
+  - name: "Test 1!"
+    description: Testing 1!
     triage_asa_complete: true
     asa_verdict_trigger: "malicious"
     default_actions:
       - "auto_review"
     auto_review_classification: "malicious"
 
-  - name: "Test 2"
-    description: Testing 2
+  - name: "Test 2!"
+    description: Testing 2!
     triage_asa_complete: true
     asa_verdict_trigger: "spam"
     default_actions:
       - "auto_review"
     auto_review_classification: "spam"
 
-  - name: "Test 3"
-    description: Testing 3
+  - name: "Test 3!"
+    description: Testing 3!
     triage_asa_complete: true
     asa_verdict_trigger: "graymail"
     default_actions:
       - "auto_review"
     auto_review_classification: "graymail"
 
-  - name: "Test 4"
-    description: Testing 4
+  - name: "Test 4!"
+    description: Testing 4!
     triage_asa_complete: true
     asa_verdict_trigger: "likely_benign"
     default_actions:
       - "auto_review"
     auto_review_classification: "benign"
 
-  - name: "Test 5"
-    description: Testing 5
+  - name: "Test 5!"
+    description: Testing 5!
     triage_asa_complete: true
     asa_verdict_trigger: "unknown"
