@@ -1,53 +1,53 @@
-name: "Send internal messages to ASA?"
+name: "Name change"
 description: |
-  Automatically send flagged internal messages to ASA for analysis,
-  then take action based on the ASA verdict.
+  Description change
 type: "triage_rule"
+authors:
+  - name: "Hi"
 triage_flagged_messages: true
 default_actions:
   - "send_to_asa"
-source: type.internal
+source: |
+  type.internal
 tags:
   - "ASA"
   - "Internal Threats"
 id: "019b2d95-4907-7bb6-9d56-9a7d4d5f1164"
 
 children:
-  - name: "ASA on Internal Message Malicious Verdict"
-    description: "Malicous verdict from ASA for a type.internal message group"
+  - name: "Test 1"
+    description: Testing 1
     triage_asa_complete: true
     asa_verdict_trigger: "malicious"
-    auto_review_classification: "malicious"
     default_actions:
-      - "quarantine_message"
       - "auto_review"
+    auto_review_classification: "malicious"
 
-  - name: "ASA on Internal Message Spam Verdict"
-    description: "Spam verdict from ASA for a type.internal message group"
+  - name: "Test 2"
+    description: Testing 2
     triage_asa_complete: true
     asa_verdict_trigger: "spam"
-    auto_review_classification: "spam"
     default_actions:
-      - "move_to_spam"
       - "auto_review"
+    auto_review_classification: "spam"
 
-  - name: "ASA on Internal Message Graymail Verdict"
-    description: "Graymail verdict from ASA for a type.internal message group"
+  - name: "Test 3"
+    description: Testing 3
     triage_asa_complete: true
     asa_verdict_trigger: "graymail"
-    auto_review_classification: "graymail"
     default_actions:
       - "auto_review"
+    auto_review_classification: "graymail"
 
-  - name: "ASA on Internal Message Benign Verdict"
-    description: "Benign verdict from ASA for a type.internal message group"
+  - name: "Test 4"
+    description: Testing 4
     triage_asa_complete: true
     asa_verdict_trigger: "likely_benign"
-    auto_review_classification: "benign"
     default_actions:
       - "auto_review"
+    auto_review_classification: "benign"
 
-  - name: "ASA on Internal Message Unknown Verdict"
-    description: "Unknown verdict from ASA for a type.internal message group"
+  - name: "Test 5"
+    description: Testing 5
     triage_asa_complete: true
     asa_verdict_trigger: "unknown"
