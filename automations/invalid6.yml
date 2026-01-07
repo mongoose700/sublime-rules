@@ -1,1 +1,6 @@
-invalid6
+name: "Invalid to valid"
+description: "Quarantine flagged messages with a Malicious Attack Score."
+type: "triage_rule"
+triage_flagged_messages: true
+default_actions: ["quarantine_message"]
+source: type.internal
