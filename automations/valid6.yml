@@ -4,4 +4,4 @@ type: "triage_rule"
 triage_flagged_messages: true
 default_actions: ["quarantine_message"]
 source: type.internal
-invalid2
+invalid3
