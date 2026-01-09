@@ -1,0 +1,5 @@
+name: "Test Rule"
+description: "Test"
+source: type.inbound and subject.subject = "Trigger Test Rule"
+type: "rule"
+severity: "medium"
