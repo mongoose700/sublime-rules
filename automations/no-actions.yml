@@ -1,0 +1,5 @@
+name: "No actions"
+description: "Quarantine flagged messages with a Malicious Attack Score."
+type: "triage_rule"
+triage_flagged_messages: true
+source: true
